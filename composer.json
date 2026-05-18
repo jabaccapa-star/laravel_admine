@@ -2,18 +2,21 @@
     "$schema": "https://getcomposer.org/schema.json",
     "name": "laraveleadmine/laravel_admine",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "description": "Laravel admin starter with login by username, puzzle CAPTCHA and user management.",
+    "keywords": ["laravel", "admin", "captcha", "breeze", "authentication"],
     "license": "MIT",
     "repositories": [
         {
             "type": "path",
-            "url": "../laravel_admine"
+            "url": "packages/laravel-admin-auth",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "require": {
         "php": "^8.3",
-        "de/laravel-admin-auth": "@dev",
+        "de/laravel-admin-auth": "^1.0",
         "laravel/framework": "^13.8",
         "laravel/tinker": "^3.0"
     },

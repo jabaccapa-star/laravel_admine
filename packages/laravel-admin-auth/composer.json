@@ -1,0 +1,27 @@
+{
+    "name": "de/laravel-admin-auth",
+    "description": "Admin panel, puzzle CAPTCHA and login by username for Laravel Breeze",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "require": {
+        "php": "^8.2",
+        "illuminate/routing": "^11.0|^12.0|^13.0",
+        "illuminate/support": "^11.0|^12.0|^13.0",
+        "illuminate/validation": "^11.0|^12.0|^13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "De\\AdminAuth\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "De\\AdminAuth\\AdminAuthServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

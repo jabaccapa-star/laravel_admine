@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2e58f3f3004f7c6a202d98872d657510",
+    "content-hash": "ca9c6d80dc1ade3735d98bf0b8fd4da0",
     "packages": [
         {
             "name": "brick/math",
@@ -137,11 +137,11 @@
         },
         {
             "name": "de/laravel-admin-auth",
-            "version": "dev-main",
+            "version": "1.0.0",
             "dist": {
                 "type": "path",
-                "url": "../laravel-admin-auth",
-                "reference": "08bebdd98cbfdb83bdae735a195381890f7284f8"
+                "url": "packages/laravel-admin-auth",
+                "reference": "b10c9eb8769046966bbf4901440dd8956540b277"
             },
             "require": {
                 "illuminate/routing": "^11.0|^12.0|^13.0",
@@ -159,8 +159,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "De\\AdminAuth\\": "src/",
-                    "De\\AdminAuth\\Database\\Seeders\\": "database/seeders/"
+                    "De\\AdminAuth\\": "src/"
                 }
             },
             "license": [
@@ -168,6 +167,7 @@
             ],
             "description": "Admin panel, puzzle CAPTCHA and login by username for Laravel Breeze",
             "transport-options": {
+                "symlink": true,
                 "relative": true
             }
         },
@@ -8347,9 +8347,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "de/laravel-admin-auth": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
