@@ -8,7 +8,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "../laravel-admin-auth"
+            "url": "../laravel_admine"
         }
     ],
     "require": {
